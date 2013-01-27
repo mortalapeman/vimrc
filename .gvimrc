@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle:'
 Bundle 'guns/vim-clojure-static'
 Bundle 'tpope/vim-foreplay'
 Bundle 'tpope/vim-classpath'
+Bundle 'scrooloose/nerdtree'
 
 imap jj <ESC>
-
+syntax on

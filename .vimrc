@@ -10,10 +10,11 @@ Bundle 'gmarik/vundle:'
 
 " My Bundles
 Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-foreplay'
+Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-classpath'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'tpope/vim-fugitive'
 
 " For rainbow parens.
 let g:rbpt_colorpairs = [

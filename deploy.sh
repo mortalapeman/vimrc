@@ -5,6 +5,8 @@ cp .vimrc .gvimrc ~/
 vim +BundleInstall +qa
 if [ ! -d  ~/bin ]
     mkdir ~/bin
-if
-wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
-chmod 755 ~/bin/lein
+fi
+if [ ! -f ~/bin/lein]
+    wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
+    chmod 755 ~/bin/lein
+fi

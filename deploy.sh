@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cp .tumx.conf .vimrc .gvimrc ~/
+cp .tmux.conf .vimrc .gvimrc ~/
 if [ ! -d ~/.vim/bundle/vundle ]
   then
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle

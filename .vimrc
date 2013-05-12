@@ -15,6 +15,7 @@ Bundle 'tpope/vim-classpath'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'jpalardy/vim-slime'
 
 " For rainbow parens.
 let g:rbpt_colorpairs = [
@@ -53,3 +54,9 @@ filetype plugin indent on
 
 " Omni complete on
 set ofu=syntaxcomplete#Complete
+
+" Setup vim-slime to default to tmux
+let g:slime_target = "tmux"
+
+set nowrap
+set nu

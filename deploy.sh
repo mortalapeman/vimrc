@@ -16,5 +16,5 @@ if [ ! -f ~/bin/lein ]
     chmod 755 ~/bin/lein
     PATH=~/bin:$PATH
     export PATH
-    echo "Don not forget to add ~/bin to your enviroment file."
+    echo "Don't not forget to add ~/bin to your enviroment file."
 fi

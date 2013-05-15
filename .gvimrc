@@ -19,6 +19,7 @@ Bundle 'jpalardy/vim-slime'
 Bundle 'chmllr/vim-colorscheme-elrodeo'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'mileszs/ack.vim'
 
 " For rainbow parens.
 let g:rbpt_colorpairs = [

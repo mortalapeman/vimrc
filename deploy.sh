@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
+./check_packages.sh
+cp .vimrc .gvimrc
 cp .tmux.conf .vimrc .gvimrc ~/
+
 if [ ! -d ~/.vim/bundle/vundle ]
   then
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle

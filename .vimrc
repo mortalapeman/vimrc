@@ -21,6 +21,7 @@ Bundle 'Lokaltog/vim-distinguished'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'mileszs/ack.vim'
 Bundle 'mattn/zencoding-vim.git'
+Bundle 'majutsushi/tagbar.git'
 
 " For rainbow parens.
 let g:rbpt_colorpairs = [
@@ -66,3 +67,7 @@ let g:slime_target = "tmux"
 set nowrap
 set nu
 
+" Setup tabs to be the way I like
+set tabstop=4
+set shiftwidth=4
+set expandtab

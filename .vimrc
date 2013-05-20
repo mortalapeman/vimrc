@@ -20,8 +20,9 @@ Bundle 'chmllr/vim-colorscheme-elrodeo'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'mileszs/ack.vim'
-Bundle 'mattn/zencoding-vim.git'
-Bundle 'majutsushi/tagbar.git'
+Bundle 'mattn/zencoding-vim'
+Bundle 'majutsushi/tagbar'
+Bundle 'scrooloose/syntastic'
 
 " For rainbow parens.
 let g:rbpt_colorpairs = [
@@ -64,6 +65,7 @@ set ofu=syntaxcomplete#Complete
 " Setup vim-slime to default to tmux
 let g:slime_target = "tmux"
 
+" Always on lne numbers and no word wrap
 set nowrap
 set nu
 
@@ -71,3 +73,9 @@ set nu
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Set tagbar toggle to F8
+noremap <F8> :TagbarToggle<CR>
+
+" Set awesome color scheme
+colorscheme elrodeo

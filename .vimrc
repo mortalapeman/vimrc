@@ -23,6 +23,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
+Bundle 'jeetsukumaran/vim-filesearch.git'
 
 " For rainbow parens.
 let g:rbpt_colorpairs = [
@@ -79,3 +80,7 @@ noremap <F8> :TagbarToggle<CR>
 
 " Set awesome color scheme
 colorscheme elrodeo
+
+" Setup NERDTreeToggle
+let mapleader=","
+noremap <Leader>n :NERDTreeToggle<CR>

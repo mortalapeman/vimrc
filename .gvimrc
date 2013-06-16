@@ -23,7 +23,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
-Bundle 'jeetsukumaran/vim-filesearch.git'
+Bundle 'pangloss/vim-javascript'
 
 " For rainbow parens.
 let g:rbpt_colorpairs = [
@@ -48,7 +48,7 @@ let g:rbpt_max = 16
 let g:rbpt_loadcmd_toggle = 0
 
 " Map escape to jj 
-imap jj <ESC>
+inoremap jj <ESC>
 
 " Needed for vim clojure static
 syntax on
@@ -66,7 +66,7 @@ set ofu=syntaxcomplete#Complete
 " Setup vim-slime to default to tmux
 let g:slime_target = "tmux"
 
-" Always on lne numbers and no word wrap
+" Always on line numbers and no word wrap
 set nowrap
 set nu
 
@@ -79,8 +79,11 @@ set expandtab
 noremap <F8> :TagbarToggle<CR>
 
 " Set awesome color scheme
-colorscheme elrodeo
+colorscheme darkBlue
 
 " Setup NERDTreeToggle
 let mapleader=","
 noremap <Leader>n :NERDTreeToggle<CR>
+
+" Syntax folding for javascript
+au FileType javascript setlocal foldmethod=syntax

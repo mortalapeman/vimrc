@@ -4,6 +4,13 @@
 cp .vimrc .gvimrc
 cp .tmux.conf .vimrc .gvimrc ~/
 
+# Sacrilege, I know
+if [ ! -d ~/.emacs.d ]
+   then
+     mkdir ~/.emacs.d
+fi
+cp init.el ~/.emacs.d/init.el
+
 if [ ! -d ~/.vim/bundle/vundle ]
   then
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle

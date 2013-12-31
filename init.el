@@ -18,9 +18,12 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+(setq auto-mode-alist (cons '("\\.cljs" . clojure-mode) auto-mode-alist))
+
 (add-hook 'clojure-mode-hook 'paredit-mode)
 
 (remove-hook 'clojure-mode-hook 'esk-pretty-fn)
+
 (put 'erase-buffer 'disabled nil)
 
 (custom-set-variables

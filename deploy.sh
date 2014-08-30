@@ -22,7 +22,7 @@ if [ ! -d  ~/.bin ]
 fi
 if [ ! -f ~/.bin/lein ]
   then
-    wget -O ~/bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
+    wget -O ~/.bin/lein https://raw.github.com/technomancy/leiningen/stable/bin/lein
     chmod 755 ~/.bin/lein
     PATH=~/.bin:$PATH
     export PATH
